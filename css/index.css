@@ -1,0 +1,118 @@
+/* NAVEGAÇÃO */
+
+nav {
+    background-color: #1e293b;
+    height: 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+
+    padding: 12px 20px;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #334155;
+}
+
+/* CONTAINER DA TABELA (Gera a barra de rolagem no celular) */
+
+.tabela-container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    overflow-x: auto; /* Ativa a rolagem horizontal se faltar espaço */
+    
+    background-color: #fff;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* TABELA */
+
+table {
+    width: 100%; /* Ocupa o espaço total do container */
+    border-collapse: collapse;
+    min-width: 650px; /* Garante que as colunas não fiquem esmagadas */
+}
+
+/* Cabeçalho da tabela */
+
+thead {
+    background-color: #1e293b;
+    color: #fff;
+}
+
+th {
+    padding: 16px;
+
+    text-align: left;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Corpo da tabela*/
+
+td {
+    padding: 15px 16px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    font-size: 15px;
+}
+
+/* DISPONIBILIDADE */
+
+.disponivel {
+    color: #15803d;
+    font-weight: bold;
+}
+
+.indisponivel {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    nav {
+        height: auto;
+        padding: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .tabela-container {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    th,
+    td {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+}

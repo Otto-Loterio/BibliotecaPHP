@@ -1,0 +1,188 @@
+/* =========================
+   NAVEGAÇÃO
+========================= */
+
+nav {
+    background-color: #1e293b;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 10px 20px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+
+    padding: 12px 20px;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #334155;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.emprestimo,
+.devolucao {
+    width: 90%;
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    background-color: #fff;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* =========================
+   LABEL
+========================= */
+
+label {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* =========================
+   SELECT
+========================= */
+
+select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+
+    background-color: #fff;
+
+    font-size: 15px;
+
+    cursor: pointer;
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+select:focus {
+    border-color: #1e293b;
+
+    box-shadow:
+        0 0 0 3px rgba(30, 41, 59, 0.1);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+button {
+    width: 100%;
+
+    padding: 13px 18px;
+
+    background-color: #1e293b;
+    color: #fff;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #334155;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* =========================
+   MENSAGENS
+========================= */
+
+.emprestimo p,
+.devolucao p {
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    line-height: 1.4;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+    nav {
+        min-height: auto;
+
+        flex-wrap: wrap;
+
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+
+        padding: 10px 14px;
+    }
+
+    .emprestimo,
+    .devolucao {
+        width: calc(100% - 30px);
+
+        margin: 25px auto;
+
+        padding: 25px 20px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    select,
+    button {
+        font-size: 14px;
+    }
+}
